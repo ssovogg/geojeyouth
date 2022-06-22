@@ -1,0 +1,365 @@
+@charset 'utf-8';
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+@import url(/web/css/fonts.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline-style: none; */
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: -0.6px;
+}
+
+/* COMMON */
+.clearfix::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.inner {
+  position: relative;
+  display: block;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+
+/* 헤더 영역 */
+.header {
+  position: relative;
+  display: block;
+}
+
+.header .inner {
+  height: 90px;
+}
+
+.header h1 {
+  position: relative;
+  display: block;
+  width: 160px;
+  height: 53px;
+  background: url('../images/img_logo.png') no-repeat center;
+  background-size: contain;
+}
+
+/* 비쥬얼 영역 */
+.visual {
+  position: relative;
+  display: block;
+  height: 477px;
+}
+.sw-visual {
+  width: 100%;
+  height: 100%;
+}
+
+.sw-visual a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.vs-1 {
+  background: url('../images/banner_1_20200915_0.jpg') no-repeat center;
+  background-size: cover;
+}
+.vs-2 {
+  background: url('../images/banner_2_20200915_0.jpg') no-repeat center;
+  background-size: cover;
+}
+.vs-3 {
+  background: url('../images/banner_4_20200915_0.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* 퀵메뉴 영역 */
+.quick-menu {
+  position: relative;
+  display: block;
+  background: #f2f4f7;
+}
+.quick-menu .inner {
+  padding: 15px 0;
+}
+
+.quick-menu ul {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden; 
+}
+.quick-menu ul li {
+  position: relative;
+  display: block;  
+  float: left;
+  width: 20%;
+  line-height: 83px;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.quick-menu ul li:last-child {
+  border-right: 0;
+}
+
+.quick-menu ul li a {
+  position: relative;
+  display: inline-block;  
+  width: 100%;
+  font-size: 17px;
+  transition: transform .5s;
+}
+.quick-menu ul li a:hover {
+  transform: translateX(-3%);
+}
+.quick-menu ul li a img {
+  position: relative;
+  display: inline-block;  
+  width: 56px;
+  height: 56px;
+  margin-right: 20px;
+}
+/* 커뮤니티 영역 */
+.community {
+  position: relative;
+  display: block;
+}
+.community .inner {
+  padding: 70px 0;
+}
+
+/* community news */
+.community-news {
+  position: relative;
+  display: block;
+  float: left;
+  width: 33%;
+  height: 372px;
+  border: 1px solid #e6e8eb;
+  padding: 36px 30px;
+  margin-right: 1.5%;
+}
+.community-news h3 {
+  position: relative;
+  color: #0e62b2;
+  padding-bottom: 25px;
+  background: url('../images/img_bg_line.png') repeat-x 0 100%;
+}
+.community-news-list {
+  position: relative;
+  display: block;
+  padding-top: 25px;
+}
+.community-news-list li {
+  position: relative;
+  display: block;
+  line-height: 52px;
+  border-bottom: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+
+.community-news-list li:last-child {
+  border-bottom: 0;
+}
+.community-news-list li a {
+  position: relative;
+  display: block;
+  float: left;
+  width: 70%;
+  font-size: 16px;
+  color: #444;
+}
+.community-news-list li span {
+  position: relative;
+  display: block;
+  float: right;
+  font-size: 15px;
+  color: #444;
+}
+
+.community-all::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: #131313;
+}
+.community-all {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  display: block;
+  font-size: 15px;
+  color: #131313;
+  padding-left: 15px;
+}
+.community-all::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  display: block;
+  width: 2px;
+  height: 8px;
+  background: #131313;
+}
+
+/* community calander */
+.community-calander {
+  position: relative;
+  display: block;
+  float: right;
+  width: 30%;
+  height: 372px;
+  border: 1px solid #e6e8eb;
+  padding: 36px 30px;
+}
+
+.community-calander h3 {
+  position: relative;
+  color: #0e62b2;
+}
+/* 갤러리 영역 */
+.gallery {
+  position: relative;
+  display: block;
+  background: url('../images/img_bottombg.jpg');
+}
+
+.gallery .inner {
+  padding: 70px 0;
+}
+
+.gallery h3 {
+  position: relative;
+  display: block;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+/* gallery-img */
+.gallery-img {}
+.gallery-img-list {
+  position: relative;
+  display: block;
+  float: left;
+  width: 67.5%;
+}
+.gallery-img-list li {
+  position: relative;
+  display: block;
+  float: left;
+  width: 32%;
+  height: 300px;
+  margin-right: 2%;
+  background: #fff;
+}
+.gallery-img-list li:last-child {
+  margin-right: 0;
+}
+.gallery-img-list li a {
+  position: relative;
+  display: block;
+}
+
+.gallery-1 {
+  position: relative;
+  display: block;
+  background: url('../images/gallery-1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.gallery-img-list li a p {
+  position: relative;
+  display: block;
+}
+.gallery-img-list li a span {
+  position: relative;
+  display: block;
+}
+
+/* gallery-video */
+.gallery-video {
+  position: relative;
+  display: block;
+  float: right;
+  width: 30%;
+}
+
+/* gallery-all */
+.gallery-all {}
+
+/* 배너 영역 */
+.banner {}
+
+/* 푸터 영역 */
+.footer {}
